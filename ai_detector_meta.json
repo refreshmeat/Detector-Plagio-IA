@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "method": "TF-IDF char 3-5 + word 1-2 grams, logistic regression; 2892-text held-out human calibration; floors 0.55 moderate / 0.85 strong; sustained multi-block headline rule",
+  "training_human_n": 989,
+  "training_ai_n": 989,
+  "calibration_human_n": 2892,
+  "test_human_n": 1197,
+  "test_ai_n": 385,
+  "human_corpus_total_unique": 5078,
+  "moderate_threshold": 0.55,
+  "strong_threshold": 0.85,
+  "test_human_moderate_fpr": 0.0,
+  "test_human_strong_fpr": 0.0,
+  "test_ai_moderate_detection": 1.0,
+  "test_ai_strong_detection": 0.987012987012987,
+  "calibration_q99": 0.24152166321026844,
+  "calibration_q999": 0.5454279322204009,
+  "test_human_max_score": 0.42317248862411255,
+  "test_ai_mean_score": 0.9492385170470039,
+  "human_sources": {
+    "capes_teses": 3473,
+    "scielo_abstracts": 1605
+  },
+  "ai_test_sources": {
+    "v2_synthetic_openrouter_nvidia_nemotron_3_super_120b_a12b": 185,
+    "v2_synthetic_mistral_medium_latest": 200
+  },
+  "headline_rule": "Only strong blocks corroborated by another strong block are counted; moderate or isolated strong blocks remain review signals and do not inflate the headline percentage."
+}
